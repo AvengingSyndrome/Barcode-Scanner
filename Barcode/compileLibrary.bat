@@ -1,0 +1,1 @@
+cd ..\ISBNLookup & build.bat & cd ..\Barcode

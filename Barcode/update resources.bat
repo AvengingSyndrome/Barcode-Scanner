@@ -1,0 +1,1 @@
+aapt package -v -f -m -S res -J src -M AndroidManifest.xml -I "c:\Users\Andrew\android-sdks\platforms\android-14\android.jar"
