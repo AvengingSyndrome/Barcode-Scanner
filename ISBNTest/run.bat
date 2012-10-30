@@ -1,0 +1,1 @@
+"C:\Program Files\Java\jdk1.6.0_35\bin\java" -classpath obj;libs\ISBNLookup.jar com.andrew.ISBNLookup.main
