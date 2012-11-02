@@ -1,0 +1,1 @@
+javac -verbose -d "../obj" -classpath "$ANDROID/android-14/android.jar:../obj:../libs/ISBNLookup.jar" -sourcepath "../src" "../src/com/andrew/bookscanner/"*.java

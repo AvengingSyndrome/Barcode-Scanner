@@ -20,7 +20,7 @@ public int onStartCommand(Intent intent, int flags, int startId)
     {
 		Notification noti = new Notification.Builder(this)
          .setContentTitle(intent.getStringExtra("notificationText"))
-         .setContentText("llololololo")
+         .setContentText("sup :)")
          .setSmallIcon(R.drawable.ic_launcher)
 		 .setWhen(System.currentTimeMillis ())
          .getNotification();

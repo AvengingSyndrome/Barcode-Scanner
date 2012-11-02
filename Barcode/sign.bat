@@ -1,1 +1,0 @@
-"%JAVA_HOME%\bin\jarsigner" -verbose -sigalg MD5withRSA -digestalg SHA1 -keystore AndroidTest.keystore -storepass pandapaypay -signedjar bin\AndroidTest.signed.apk bin\AndroidTest.unsigned.apk AndroidTestKey

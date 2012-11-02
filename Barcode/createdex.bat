@@ -1,1 +1,0 @@
-dx --dex --output "%CD%\bin\classes.dex" "%CD%\obj" "%CD%\libs"

@@ -1,0 +1,1 @@
+javac -verbose -d ../obj ../src/com/andrew/ISBNLookup/*.java ../src/org/json/*.java

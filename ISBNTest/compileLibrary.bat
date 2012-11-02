@@ -1,1 +1,0 @@
-cd ..\ISBNLookup & build.bat & cd ..\ISBNTest

@@ -1,0 +1,1 @@
+dx --dex --output "../bin/classes.dex" "../obj" "$PWD/../libs/"

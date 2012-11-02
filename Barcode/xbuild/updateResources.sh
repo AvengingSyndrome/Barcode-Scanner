@@ -1,0 +1,1 @@
+aapt package -v -f -m -S ../res -J ../src -M ../AndroidManifest.xml -I "$ANDROID/android-16/android.jar"

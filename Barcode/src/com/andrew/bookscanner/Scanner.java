@@ -58,12 +58,7 @@ public class Scanner extends Activity {
 				final String contents = intent.getStringExtra("SCAN_RESULT");
 				String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
 				new Thread ( new Runnable () { public void run () { 
-					String res = ISBNLookup.getBookDetails(contents);
-					try {
-						webview.loadUrl("javascript:returnData("+res.replace("'", "\\'")+")");
-					} catch (Exception ex) {
-						webview.loadUrl("javascript:returnData('"+ex.toString()+"')");
-					}
+					lookUp(contents);
 				}}).start();
 				
 				// Handle successful scan
@@ -71,6 +66,15 @@ public class Scanner extends Activity {
 				// Handle cancel
 			}
 		}
+	}
+	
+	public void lookUp(String contents) {
+        try {
+            String res = ISBNLookup.getBookDetails(contents);
+            webview.loadUrl("javascript:returnData("+res.replace("'", "\\'")+",)");
+        } catch (Exception ex) {
+            webview.loadUrl("javascript:throwError('"+ex.toString()+"')");
+        }	
 	}
 
 }
